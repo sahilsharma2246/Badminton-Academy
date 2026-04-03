@@ -1,0 +1,163 @@
+/* ===== ADMIN RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f1f5f9;
+}
+
+/* ===== ADMIN LAYOUT ===== */
+.admin-layout {
+  display: flex;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 230px;
+  min-height: 100vh;
+
+  /* 🔥 DARK MODERN */
+  background: #0f172a;
+  color: #e2e8f0;
+
+  padding: 20px;
+}
+
+/* TITLE */
+.sidebar h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* LINKS */
+.sidebar a {
+  display: block;
+  color: #cbd5f5;
+  text-decoration: none;
+
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.sidebar a:hover {
+  background: #1e293b;
+  color: #60a5fa;   /* blue accent */
+}
+
+/* ACTIVE LINK */
+.sidebar a.active {
+  background: #1e293b;
+  color: #3b82f6;
+}
+
+/* ===== CONTENT ===== */
+.admin-content {
+  flex: 1;
+  padding: 25px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+
+  border: 1px solid #e5e7eb;
+  margin-bottom: 20px;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* ===== TABLE ===== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+}
+
+/* HEADER */
+.table th {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* ROWS */
+.table tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+
+  background: #3b82f6;
+  color: #fff;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  /* SIDEBAR → HEADER */
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    padding: 12px 15px;
+  }
+
+  .sidebar h3 {
+    margin-bottom: 10px;
+  }
+
+  .sidebar a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  /* STACK */
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  .admin-content {
+    padding: 15px;
+  }
+}

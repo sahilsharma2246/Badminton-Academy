@@ -1,0 +1,82 @@
+/* ===== LOGIN CONTAINER ===== */
+.login-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+/* ===== LOGIN BOX ===== */
+.login-box {
+  width: 320px;
+  padding: 30px;
+
+  background: #ffffff;
+  border-radius: 15px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* TITLE */
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #14532d;   /* dark green */
+}
+
+/* ===== INPUT ===== */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  border-radius: 8px;
+  border: 1px solid #bbf7d0;
+
+  outline: none;
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS */
+.login-box input:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 2px rgba(34,197,94,0.2);
+}
+
+/* ===== BUTTON ===== */
+#b1 {
+  width: 100%;
+  padding: 10px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: #16a34a;
+  color: #fff;
+
+  font-size: 15px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+#b1:hover {
+  background: #14532d;
+}
+
+/* ===== EXTRA TOUCH ===== */
+.login-box:hover {
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+    padding: 20px;
+  }
+}
