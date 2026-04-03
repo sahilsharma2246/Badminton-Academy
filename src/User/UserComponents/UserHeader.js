@@ -11,7 +11,7 @@ function UserHeader() {
     <Link to="/">Home</Link>
     <Link to="/courts">Courts</Link>
     <Link to="/mybookings">Bookings</Link>
-    <Link to="/login"> 👤</Link>
+    <Link to="/login">👤</Link>
   </div>
 </div>
   );
