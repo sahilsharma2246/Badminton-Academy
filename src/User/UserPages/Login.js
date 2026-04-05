@@ -18,7 +18,7 @@ function Login() {
     for (let key in data) {
       if (data[key].email === email && data[key].password === password) {
         
-        firedb.child("Owner").child(key).update({ status: 1 });
+        firedb.child("Academy").child(key).update({ status: 1 });
 
          localStorage.setItem("userKey", key);
 

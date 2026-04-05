@@ -121,8 +121,9 @@
 
 /* ===== BUTTON STYLE ===== */
 .btn {
-  margin-top: 10px;
-  padding: 10px 18px;
+  display: inline-block;
+  margin-top: 30px; /* increased spacing */
+  padding: 12px 22px;
   border-radius: 25px;
 
   background: #16a34a;
@@ -130,11 +131,12 @@
 
   border: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
   background: #14532d;
+  transform: translateY(-2px);
 }
 
 /* ===== RESPONSIVE ===== */

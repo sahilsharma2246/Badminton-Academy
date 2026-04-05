@@ -1,0 +1,80 @@
+/* ===== PAGE ===== */
+.courts-page {
+  padding: 30px;
+  text-align: center;
+}
+
+.courts-page h2 {
+  color: #16a34a;
+  margin-bottom: 20px;
+}
+
+/* ===== GRID ===== */
+.courts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* ===== CARD ===== */
+.court-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.court-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== IMAGE ===== */
+.court-card img {
+  width: 100%;
+  height: 340px; /* increased size */
+  object-fit: cover;
+
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* ===== TEXT ===== */
+.court-card h3 {
+  color: #14532d;
+  margin-bottom: 5px;
+}
+
+.court-card p {
+  color: #16a34a;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ===== BUTTON ===== */
+.court-card button {
+  margin-top: 10px;
+  padding: 10px 16px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: #16a34a;
+  color: #fff;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.court-card button:hover {
+  background: #14532d;
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .court-card img {
+    height: 180px; /* responsive size */
+  }
+}

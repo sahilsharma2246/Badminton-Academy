@@ -1,0 +1,153 @@
+/* ===== PAGE WRAPPER ===== */
+.upload-container {
+  padding: 30px;
+}
+
+/* ===== FORM BOX ===== */
+.upload-box {
+  max-width: 420px;
+  margin: auto;
+  padding: 25px;
+
+  background: #ffffff;
+  border-radius: 15px;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.upload-box h2 {
+  color: #0f172a; /* changed from green → dark */
+}
+
+/* ===== INPUTS ===== */
+.upload-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+
+  border-radius: 10px;
+  border: 1px solid #ddd;
+
+  outline: none;
+  transition: 0.3s;
+}
+
+.upload-box input:focus {
+  border-color: #3b82f6; /* blue focus */
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+}
+
+/* ===== BUTTON ===== */
+.upload-box button {
+  margin-top: 20px;
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: #3b82f6; /* blue */
+  color: #fff;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-box button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* ===== TABLE SECTION ===== */
+.table-container {
+  margin-top: 40px;
+
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.table-container h2 {
+  color: #0f172a; /* dark heading */
+}
+
+/* ===== TABLE ===== */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th {
+  background: #f8fafc; /* light header */
+  color: #0f172a;
+}
+
+.table-container th,
+.table-container td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.table-container tr:hover {
+  background: #f1f5f9;
+}
+
+/* ===== TABLE IMAGE ===== */
+.table-container img {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.table-container img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== ACTION BUTTONS ===== */
+.table-container button {
+  margin: 3px;
+  padding: 6px 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Edit */
+.table-container button:first-child {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.table-container button:first-child:hover {
+  background: #2563eb;
+}
+
+/* Delete */
+.table-container button:last-child {
+  background: #ef4444;
+  color: #fff;
+}
+
+.table-container button:last-child:hover {
+  background: #b91c1c;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .upload-box {
+    width: 100%;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 600px;
+  }
+}
