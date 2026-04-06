@@ -7,7 +7,7 @@ function Home() {
       {/* ===== HERO SECTION ===== */}
       <div className="hero">
         <div className="hero-text">
-          <h1>🏸 Welcome to Badminton Academy</h1>
+          <h1>🏸 Welcome to Court Masters</h1>
           <p>
             Book courts, improve your skills, and enjoy the best badminton
             experience.
