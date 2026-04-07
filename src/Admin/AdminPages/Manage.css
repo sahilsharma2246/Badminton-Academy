@@ -91,3 +91,17 @@
     height: 160px;
   }
 }
+.remove-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background: #d9363e;
+}

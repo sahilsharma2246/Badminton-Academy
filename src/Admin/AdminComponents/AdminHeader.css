@@ -25,6 +25,11 @@ body {
   color: #e2e8f0;
 
   padding: 20px;
+
+  /* ✅ STICKY (DESKTOP ONLY) */
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 /* TITLE */
@@ -50,7 +55,7 @@ body {
 /* HOVER EFFECT */
 .sidebar a:hover {
   background: #1e293b;
-  color: #60a5fa;   /* blue accent */
+  color: #60a5fa;
 }
 
 /* ACTIVE LINK */
@@ -135,11 +140,15 @@ body {
     min-height: auto;
 
     display: flex;
-    flex-direction: row;        /* 🔥 make horizontal */
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     padding: 10px 15px;
+
+    /* ❌ REMOVE STICKY ON MOBILE */
+    position: relative;
+    height: auto;
   }
 
   .sidebar h3 {
@@ -150,12 +159,12 @@ body {
   /* LINKS IN ROW */
   .sidebar a {
     display: inline-block;
-    margin: 0 6px;              /* spacing between links */
+    margin: 0 6px;
     font-size: 13px;
     padding: 6px 8px;
   }
 
-  /* OPTIONAL: wrap links nicely */
+  /* LINKS WRAPPER */
   .sidebar div {
     display: flex;
     align-items: center;
