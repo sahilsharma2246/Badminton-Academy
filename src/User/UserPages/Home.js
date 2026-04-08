@@ -12,7 +12,7 @@ function Home() {
             Book courts, improve your skills, and enjoy the best badminton
             experience.
           </p>
-          <a href="/courts" className="btn">Book Now</a>
+          <a href="/courts" className="btn">Book-Now</a>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ function Home() {
         </div>
       </div>
 
-      {/* ===== GALLERY ===== */}
+     
       <div className="card">
         <h2>Our Courts</h2>
 
