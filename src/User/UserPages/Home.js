@@ -48,7 +48,7 @@ function Home() {
 
      
       <div className="card">
-        <h2>Our Courts</h2>
+        <h2>Our-Courts</h2>
 
         <div className="gallery">
           <img src="https://i.pinimg.com/1200x/67/e6/6b/67e66bacc631ef68204a8e1ff57fc859.jpg" alt="court" />
