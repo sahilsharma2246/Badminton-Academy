@@ -7,7 +7,7 @@ function Dashboard() {
   const [courts, setCourts] = useState([]);
   const [bookings, setBookings] = useState([]);
 
-  // ✅ Fetch Courts
+  
   useEffect(() => {
     firedb.child("Courts").on("value", (snapshot) => {
       const data = snapshot.val();
@@ -21,7 +21,7 @@ function Dashboard() {
     });
   }, []);
 
-  // ✅ Fetch Bookings
+  
   useEffect(() => {
     firedb.child("Bookings").on("value", (snapshot) => {
       const data = snapshot.val();
@@ -35,7 +35,7 @@ function Dashboard() {
     });
   }, []);
 
-  // ✅ Total Revenue
+  
   const totalRevenue = bookings.reduce(
     (sum, item) => sum + Number(item.total || 0),
     0
@@ -46,7 +46,7 @@ function Dashboard() {
 
       <h2>Admin Dashboard</h2>
 
-      {/* ===== STATS ===== */}
+     
       <div className="stats">
 
         <div className="card">
@@ -66,7 +66,7 @@ function Dashboard() {
 
       </div>
 
-      {/* ===== RECENT BOOKINGS ===== */}
+      
       <div className="card">
         <h3>Recent Bookings</h3>
 

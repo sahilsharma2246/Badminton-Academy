@@ -9,7 +9,6 @@ import AdminLayout from "./Layout/Adminlayout";
 import Home from "./User/UserPages/Home";
 import Login from "./User/UserPages/Login";
 import Courts from "./User/UserPages/Courts";
-
 import MyBookings from "./User/UserPages/MyBookings";
 
 // Admin Pages
@@ -23,7 +22,7 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        {/* USER ROUTES */}
+       
          <Route element={<UserLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -31,7 +30,7 @@ function App() {
           <Route path="/mybookings" element={<MyBookings />} />
         </Route>
 
-        {/* ADMIN ROUTES */}
+       
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="" element={<Dashboard />} />
           <Route path="addcourt" element={<Addcourt />} />

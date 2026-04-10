@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="layout-container">
 
-      {/* ===== HERO SECTION ===== */}
+     
       <div className="hero">
         <div className="hero-text">
           <h1>🏸 Welcome to Court Masters</h1>
@@ -16,7 +16,7 @@ function Home() {
         </div>
       </div>
 
-      {/* ===== ABOUT SECTION ===== */}
+      
       <div className="card about-section">
         <div className="about-text">
           <h2>About Our Academy</h2>
@@ -34,7 +34,7 @@ function Home() {
         />
       </div>
 
-      {/* ===== FEATURES ===== */}
+     
       <div className="card">
         <h2>Why Choose Us?</h2>
 
@@ -57,7 +57,7 @@ function Home() {
         </div>
       </div>
 
-      {/* ===== CTA ===== */}
+    
       <div className="card cta">
         <h2>Start Playing Today!</h2>
         <p>Reserve your court in seconds.</p>

@@ -1,4 +1,3 @@
-/* ===== ADMIN RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -10,75 +9,58 @@ body {
   background: #f1f5f9;
 }
 
-/* ===== ADMIN LAYOUT ===== */
 .admin-layout {
   display: flex;
 }
 
-/* ===== SIDEBAR ===== */
 .sidebar {
   width: 230px;
   min-height: 100vh;
-
-  /* 🔥 DARK MODERN */
   background: #0f172a;
   color: #e2e8f0;
-
   padding: 20px;
-
-  /* ✅ STICKY (DESKTOP ONLY) */
   position: sticky;
   top: 0;
   height: 100vh;
 }
 
-/* TITLE */
 .sidebar h3 {
   margin-bottom: 20px;
   font-size: 20px;
   color: #ffffff;
 }
 
-/* LINKS */
 .sidebar a {
   display: block;
   color: #cbd5f5;
   text-decoration: none;
-
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 8px;
-
   transition: 0.3s;
 }
 
-/* HOVER EFFECT */
 .sidebar a:hover {
   background: #1e293b;
   color: #60a5fa;
 }
 
-/* ACTIVE LINK */
 .sidebar a.active {
   background: #1e293b;
   color: #3b82f6;
 }
 
-/* ===== CONTENT ===== */
 .admin-content {
   flex: 1;
   padding: 25px;
 }
 
-/* ===== CARDS ===== */
 .card {
   background: #ffffff;
   padding: 20px;
   border-radius: 12px;
-
   border: 1px solid #e5e7eb;
   margin-bottom: 20px;
-
   transition: 0.3s;
 }
 
@@ -86,12 +68,10 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
-/* ===== TABLE ===== */
 .table {
   width: 100%;
   border-collapse: collapse;
   background: #ffffff;
-
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #e5e7eb;
@@ -103,26 +83,21 @@ body {
   text-align: left;
 }
 
-/* HEADER */
 .table th {
   background: #f8fafc;
   color: #0f172a;
 }
 
-/* ROWS */
 .table tr:nth-child(even) {
   background: #f9fafb;
 }
 
-/* ===== BUTTON ===== */
 .btn {
   padding: 8px 15px;
   border: none;
   border-radius: 6px;
-
   background: #3b82f6;
   color: #fff;
-
   cursor: pointer;
   transition: 0.3s;
 }
@@ -131,22 +106,15 @@ body {
   background: #2563eb;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-
-  /* SIDEBAR → HEADER */
   .sidebar {
     width: 100%;
     min-height: auto;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     padding: 10px 15px;
-
-    /* ❌ REMOVE STICKY ON MOBILE */
     position: relative;
     height: auto;
   }
@@ -156,7 +124,6 @@ body {
     font-size: 16px;
   }
 
-  /* LINKS IN ROW */
   .sidebar a {
     display: inline-block;
     margin: 0 6px;
@@ -164,13 +131,11 @@ body {
     padding: 6px 8px;
   }
 
-  /* LINKS WRAPPER */
   .sidebar div {
     display: flex;
     align-items: center;
   }
 
-  /* STACK CONTENT */
   .admin-layout {
     flex-direction: column;
   }

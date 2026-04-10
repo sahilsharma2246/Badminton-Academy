@@ -5,11 +5,11 @@ import "./Manage.css";
 function Manage() {
   const [bookings, setBookings] = useState([]);
 
-  // ✅ Fetch bookings from Firebase
+ 
   useEffect(() => {
-    const dbRef = firedb.child("Bookings");
+    const book = firedb.child("Bookings");
 
-    dbRef.on("value", (snapshot) => {
+    book.on("value", (snapshot) => {
       const data = snapshot.val();
       let list = [];
 
@@ -22,11 +22,11 @@ function Manage() {
       setBookings(list);
     });
 
-    // ✅ Cleanup listener
-    return () => dbRef.off();
+    
+    return () => book.off();
   }, []);
 
-  // ✅ Remove booking
+  
   const handleRemove = (id) => {
     if (window.confirm("Delete this booking?")) {
       firedb.child("Bookings").child(id).remove();
@@ -43,14 +43,14 @@ function Manage() {
         bookings.map((item) => (
           <div key={item.id} className="booking-card">
 
-            {/* USER DETAILS */}
+            
             <div className="user-info">
               <h3>{item.user?.name}</h3>
               <p>📞 {item.user?.phone}</p>
               <p>📅 {item.user?.date} | ⏰ {item.user?.time}</p>
             </div>
 
-            {/* COURTS */}
+            
             <div className="courts-list">
               {item.courts?.map((court, index) => (
                 <div key={index} className="court-item">
@@ -60,10 +60,10 @@ function Manage() {
               ))}
             </div>
 
-            {/* TOTAL */}
+            
             <h4>Total: ₹{item.total}</h4>
 
-            {/* REMOVE BUTTON */}
+          
             <button
               className="remove-btn"
               onClick={() => handleRemove(item.id)}

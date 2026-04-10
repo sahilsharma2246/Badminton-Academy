@@ -12,13 +12,13 @@ function MyBookings() {
     time: ""
   });
 
-  // ✅ Get Cart Data
+  
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("cart")) || [];
     setCart(data);
   }, []);
 
-  // ✅ Handle Input
+ 
   const handleChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
@@ -26,7 +26,7 @@ function MyBookings() {
   // ✅ Total Price
   const total = cart.reduce((sum, item) => sum + Number(item.price), 0);
 
-  // ✅ Pay Now (Save to Firebase)
+ 
   const payNow = () => {
 
     if (!user.name || !user.phone || !user.date || !user.time) {
@@ -61,7 +61,7 @@ function MyBookings() {
 
       <h2>My Bookings</h2>
 
-      {/* ===== CART ITEMS ===== */}
+      
       {cart.length === 0 ? (
         <p>No items in cart</p>
       ) : (
@@ -79,10 +79,10 @@ function MyBookings() {
         </div>
       )}
 
-      {/* ===== TOTAL ===== */}
+     
       <h3>Total: ₹{total}</h3>
 
-      {/* ===== USER FORM ===== */}
+      
       <div className="booking-form">
         <input
           name="name"

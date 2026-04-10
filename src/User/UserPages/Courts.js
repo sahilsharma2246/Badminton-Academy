@@ -7,7 +7,7 @@ function Courts() {
 
   const [courts, setCourts] = useState([]);
 
-  // ✅ Fetch Courts
+  
   useEffect(() => {
     firedb.child("Courts").on("value", (snapshot) => {
       const data = snapshot.val();
@@ -21,7 +21,7 @@ function Courts() {
     });
   }, []);
 
-  // ✅ Add to Cart
+ 
   const addToCart = (court) => {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 

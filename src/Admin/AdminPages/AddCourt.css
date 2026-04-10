@@ -1,9 +1,8 @@
-/* ===== PAGE WRAPPER ===== */
 .upload-container {
   padding: 30px;
 }
 
-/* ===== FORM BOX ===== */
+
 .upload-box {
   max-width: 420px;
   margin: auto;
@@ -17,10 +16,10 @@
 }
 
 .upload-box h2 {
-  color: #0f172a; /* changed from green → dark */
+  color: #0f172a;
 }
 
-/* ===== INPUTS ===== */
+
 .upload-box input {
   width: 100%;
   padding: 10px;
@@ -38,7 +37,7 @@
   box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
 }
 
-/* ===== BUTTON ===== */
+
 .upload-box button {
   margin-top: 20px;
   padding: 12px 20px;
@@ -46,7 +45,7 @@
   border: none;
   border-radius: 25px;
 
-  background: #3b82f6; /* blue */
+  background: #3b82f6; 
   color: #fff;
 
   cursor: pointer;
@@ -58,7 +57,6 @@
   transform: translateY(-2px);
 }
 
-/* ===== TABLE SECTION ===== */
 .table-container {
   margin-top: 40px;
 
@@ -70,7 +68,7 @@
 }
 
 .table-container h2 {
-  color: #0f172a; /* dark heading */
+  color: #0f172a; 
 }
 
 /* ===== TABLE ===== */
@@ -80,7 +78,7 @@
 }
 
 .table-container th {
-  background: #f8fafc; /* light header */
+  background: #f8fafc; 
   color: #0f172a;
 }
 
@@ -95,7 +93,6 @@
   background: #f1f5f9;
 }
 
-/* ===== TABLE IMAGE ===== */
 .table-container img {
   border-radius: 10px;
   transition: 0.3s;
@@ -105,7 +102,6 @@
   transform: scale(1.05);
 }
 
-/* ===== ACTION BUTTONS ===== */
 .table-container button {
   margin: 3px;
   padding: 6px 12px;
@@ -117,7 +113,6 @@
   transition: 0.3s;
 }
 
-/* Edit */
 .table-container button:first-child {
   background: #3b82f6;
   color: #fff;
@@ -127,7 +122,6 @@
   background: #2563eb;
 }
 
-/* Delete */
 .table-container button:last-child {
   background: #ef4444;
   color: #fff;
@@ -137,7 +131,6 @@
   background: #b91c1c;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .upload-box {
     width: 100%;

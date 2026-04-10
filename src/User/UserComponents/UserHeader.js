@@ -5,7 +5,7 @@ import "./UserHeader.css";
 function UserHeader() {
   return (
    <div className="header">
-  <h2>Academy</h2>
+  <h2>Court Masters</h2>
 
   <div className="nav-links">
     <Link to="/">Home</Link>

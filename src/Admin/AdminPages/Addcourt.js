@@ -17,7 +17,7 @@ function Addcourt() {
 
   const navigate = useNavigate();
 
-  // ✅ Auth check
+
   useEffect(() => {
     const key = localStorage.getItem("userKey");
 
@@ -37,7 +37,7 @@ function Addcourt() {
     });
   }, [navigate]);
 
-  // ✅ Fetch courts
+
   useEffect(() => {
     firedb.child("Courts").on("value", (snapshot) => {
       const data = snapshot.val();
@@ -55,7 +55,7 @@ function Addcourt() {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
-  // ✅ Upload / Update
+  
   const upload = () => {
     if (!data.name || !data.price) {
       alert("Fill required fields");
@@ -74,13 +74,13 @@ function Addcourt() {
     setData({ name: "", price: "", img: "" });
   };
 
-  // ✅ Delete
+ 
   const del = (id) => {
     firedb.child("Courts").child(id).remove();
     alert("Deleted ❌");
   };
 
-  // ✅ Edit
+ 
   const edit = (item) => {
     setData(item);
     setEditId(item.id);
@@ -89,7 +89,6 @@ function Addcourt() {
   return (
     <div className="upload-container">
 
-      {/* Form */}
       <div className="upload-box">
         <h2>Upload Racquet</h2>
 
@@ -121,7 +120,7 @@ function Addcourt() {
         </button>
       </div>
 
-      {/* Table */}
+
       <div className="table-container">
         <h2>Racquets List</h2>
 
@@ -131,7 +130,6 @@ function Addcourt() {
               <th>Name</th>
               <th>Price</th>
               <th>Image</th>
-              
               <th>Action</th>
             </tr>
           </thead>
